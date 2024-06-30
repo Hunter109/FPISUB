@@ -1,0 +1,742 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --button: #6674cc;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* navbar style start here  */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 32rem;
+}
+
+.navbar .logo img {
+    height: 3rem;
+}
+
+/* for responsive hamburger  */
+.navbar .ham-burger {
+    display: none;
+}
+
+.navbar .ham-burger .menu-icon {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.navbar .nav-links>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .nav-links>ul>li {
+    padding: 10px 20px;
+    font-weight: 500;
+    /* border: 1px solid red; */
+}
+
+.navbar .nav-links>ul>li:first-child {
+    background-color: var(--button);
+    border-radius: 5px;
+    border: 2px solid var(--button);
+}
+
+.navbar .nav-links>ul>li:first-child a {
+    color: white;
+}
+
+.navbar .nav-links>ul>li:last-child {
+    border-radius: 5px;
+    border: 2px solid var(--button);
+}
+
+.navbar .nav-links>ul>li:last-child a {
+    border-radius: 5px;
+    color: var(--button);
+}
+
+.nav-links .new-course i {
+    font-size: 12px;
+}
+
+.nav-links .new-course .course-dropdown {
+    position: absolute;
+    display: none;
+    top: 4rem;
+    right: 15rem;
+    /* border: 1px solid red; */
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px;
+}
+
+.new-course .course-dropdown ul li {
+    padding: 10px 20px;
+}
+
+.new-course .course-dropdown ul li a:hover {
+    color: #6674cc;
+}
+
+.nav-links .new-course:hover .course-dropdown {
+    display: block;
+}
+
+/* navbar style end here  */
+
+/* main content style here  */
+
+.image-with-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e8f0fe;
+
+    background-image: linear-gradient(to right, white, #c0d2f7);
+    /* background-image: url("/assets/image/asset\ 20.jpeg"); */
+    padding: 80px 0;
+}
+
+.image-with-text .text-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 29rem;
+    gap: 3rem;
+}
+
+.image-with-text .text-container .text-heading strong {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 78px;
+}
+
+.image-with-text .text-container .text-heading strong span {
+    color: #6674cc;
+}
+
+.image-with-text .text-container .explore-btn a {
+    background-color: #6674cc;
+    color: white;
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.image-with-text .text-container .explore-btn a i {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.image-with-text .image-container img {
+    height: 27rem;
+}
+
+/* image with content end here  */
+
+.about .about-us {
+    background-image: url(../image/whyus.png);
+    background-position: bottom;
+    height: 40vh;
+    background-size: cover;
+    padding: 1rem;
+    /* background-color: #5e5eb3; */
+}
+
+.about .about-us h3 {
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+
+.about .about-us .sucess {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.about .about-us .sucess div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about .about-us .sucess div span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about .about-us .sucess div i {
+    font-size: 30px;
+}
+
+/* new batch style  */
+.new-batch {
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.new-batch div:first-child {
+    color: #6674cc;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.new-batch div:nth-child(2) {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.new-batch div:nth-child(3) {
+    font-size: 18px;
+}
+
+.new-batch div:nth-child(4) a {
+    background-color: #6674cc;
+    padding: 15px 40px;
+    color: white;
+    font-weight: 600;
+}
+
+/* dream job style  */
+.dream-job {
+    padding: 3rem;
+    text-align: center;
+    background-color: #f8f8fd;
+    border-bottom: 2px solid #262626;
+}
+
+.dream-job h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.dream-job h3 span {
+    color: #6674cc;
+}
+
+.dream-job>span {
+    text-align: center;
+    color: #262626;
+    font-size: 22px;
+}
+
+.dream-job .company-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3rem;
+    width: 80vw;
+    place-items: center;
+    margin: 2rem auto;
+}
+
+/* .dream-job .company-list div {
+    justify-content: center;
+    align-items: center;
+
+} */
+
+.dream-job .company-list div img {
+    height: 3.5rem;
+}
+
+/* our selected student  */
+.our-student {
+    padding: 3rem;
+    background-color: #f8f8fd;
+}
+
+.our-student h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #6674cc;
+    text-align: center;
+}
+
+.our-student .selected-student {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80vw;
+    margin: 3rem auto;
+    place-items: center;
+    row-gap: 2.5rem;
+
+}
+
+
+.our-student .selected-student div img {
+    height: 20rem;
+}
+
+/* our mission style  */
+
+.mission h3 {
+    font-size: 22px;
+    text-align: center;
+    padding: 5rem;
+}
+
+.mission .mission-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.mission .mission-image img {
+    height: 40rem;
+}
+
+/* join us style  */
+.join-us {
+    background-color: #f8f8fd;
+    padding: 4rem;
+}
+
+.join-us h3 {
+    text-align: center;
+    color: #6674cc;
+    font-size: 22px;
+}
+
+.join-us .social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem;
+}
+
+.join-us .social-media div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.join-us .social-media i {
+    font-size: 2.5rem;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-instagram {
+    color: #e91e62;
+}
+
+.fa-telegram {
+    color: #11b3e9;
+}
+
+.join-us .social-media div :nth-child(2) {
+    font-size: 16px;
+}
+
+.join-us .social-media div :nth-child(3) {
+    color: #6674cc;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+footer {
+    padding: 5rem;
+
+}
+
+footer .footer-col {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 90vw;
+
+}
+
+footer .copyright {
+    padding: 1rem;
+    text-align: center;
+
+}
+
+footer .footer-col1 img {
+    height: 3rem;
+}
+
+footer .footer-col1,
+footer .footer-col2,
+footer .footer-col3,
+footer .footer-col4 {
+    width: 20rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    height: 15rem;
+}
+
+footer .footer-col1 div {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+
+}
+
+
+
+footer .footer-col2 h3,
+footer .footer-col3 h3,
+footer .footer-col4 h3 {
+    font-size: 18px;
+}
+
+footer .footer-col2 ul li,
+footer .footer-col3 ul li,
+footer .footer-col4 ul li {
+    padding: 7px 0;
+}
+
+footer .footer-col2 ul li i {
+    padding-right: 10px;
+    color: #6674cc;
+    font-size: 20px;
+}
+
+footer .footer-col3 ul li i {
+    color: #251d7f;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+footer .footer-col4 ul li i {
+    color: #262626;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+
+/* responsive style for mobile view */
+
+@media only screen and (max-width: 428px) {
+
+    /* navbar responsive try  */
+    .navbar {
+        justify-content: space-between;
+        padding: 15px;
+        gap: 1rem;
+        border: 1px solid red;
+    }
+
+    .navbar .ham-burger {
+        display: block;
+    }
+
+    .navbar .logo img {
+        height: 2rem;
+    }
+
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .navbar .ham-burger:hover+.nav-links {
+        position: absolute;
+        top: 5rem;
+        left: 15rem;
+        display: block;
+    }
+
+    .navbar .ham-burger:hover+.nav-links ul {
+        top: 20px;
+        flex-direction: column;
+    }
+
+    /* image with text  */
+
+    .image-with-text {
+        flex-direction: column;
+        padding: 60px 0;
+        justify-content: space-around;
+        gap: 3rem;
+    }
+
+    .image-with-text .text-container {
+        width: 90vw;
+        gap: 2rem;
+        padding: 10px 20px;
+    }
+
+    .image-with-text .text-container .text-heading strong {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+
+    .image-with-text .text-container .explore-btn a {
+        padding: 15px 15px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 2px;
+    }
+
+    .image-with-text .text-container .explore-btn a i {
+        font-size: 14px;
+    }
+
+    .image-with-text .image-container img {
+        height: 17rem;
+    }
+
+    /* about us style  */
+    .about .about-us {
+        height: 70vh;
+        background-position: left bottom;
+        padding: 25px 15px;
+    }
+
+    .about .about-us h3 {
+        font-size: 16px;
+        padding: 30px 10px;
+    }
+
+    .about .about-us .sucess {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about .about-us .sucess div {
+        gap: 10px;
+    }
+
+    .about .about-us .sucess div span {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .about .about-us .sucess div i {
+        font-size: 20px;
+    }
+
+    /* company achieved style  */
+    .dream-job {
+        padding: 1rem;
+    }
+
+    .dream-job h3 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .dream-job>span {
+        font-size: 18px;
+    }
+
+    .dream-job .company-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+    }
+
+    /* our selected student  */
+
+
+    .our-student h3 {
+        font-size: 18px;
+
+    }
+
+    .our-student .selected-student {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem auto;
+
+        row-gap: 1rem;
+
+    }
+
+
+    .our-student .selected-student div img {
+        height: 8rem;
+    }
+
+    /* our mission  */
+    .mission h3 {
+        font-size: 18px;
+        padding: 2rem;
+    }
+
+    .mission .mission-image {
+        margin-bottom: 2rem;
+    }
+
+    .mission .mission-image img {
+        height: 10rem;
+    }
+
+    /* join us  */
+    .join-us {
+        padding: 2rem;
+    }
+
+    .join-us h3 {
+        font-size: 18px;
+    }
+
+    .join-us .social-media {
+
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    footer {
+        padding: 10px;
+
+    }
+
+
+    footer .footer-col {
+
+        flex-direction: column;
+        margin: auto;
+
+    }
+
+    footer .footer-col1,
+    footer .footer-col2,
+    footer .footer-col3,
+    footer .footer-col4 {
+        width: 90vw;
+        height: 14rem;
+
+    }
+
+
+}
+
+/* responsive style for table view  */
+
+@media only screen and (min-width: 429px) and (max-width: 834px) {
+    /* navbar for tablet  */
+
+    .navbar {
+        padding: 20px;
+        gap: 5rem;
+    }
+
+    .navbar .logo img {
+        height: 2.5rem;
+    }
+
+    .nav-links .new-course .course-dropdown {
+        position: absolute;
+        display: none;
+        top: 4rem;
+        right: 10rem;
+        border-radius: 3px;
+    }
+
+    /* image with text style */
+
+    .image-with-text .text-container {
+        padding: 20px;
+    }
+
+    .image-with-text .text-container .text-heading strong {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+
+    .image-with-text .image-container img {
+        height: 20rem;
+    }
+
+    /* dream job style  */
+
+    .dream-job .company-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
+
+
+    .our-student .selected-student {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 2rem;
+
+    }
+
+
+    .our-student .selected-student div img {
+        height: 10rem;
+    }
+
+    /* our mission  */
+    .mission h3 {
+        font-size: 20px;
+        padding: 3rem;
+    }
+
+    .mission .mission-image {
+        margin-bottom: 3rem;
+    }
+
+    .mission .mission-image img {
+        height: 20rem;
+    }
+
+
+    footer {
+        padding: 10px;
+    }
+
+    footer .footer-col {
+        flex-wrap: wrap;
+        width: 98vw;
+        flex-basis: 45vw;
+
+    }
+
+}
