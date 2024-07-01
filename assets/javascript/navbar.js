@@ -29,7 +29,7 @@ links.forEach((link) => {
 AOS.init({
     easing: 'ease-out-back',
     duration: 1000,
-    delay: 200,
+    delay: 100,
     once: false,
     mirror: true,
     disable: 'phone',

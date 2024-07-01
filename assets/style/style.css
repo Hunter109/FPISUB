@@ -44,8 +44,9 @@ a {
 /* header style start */
 
 header {
-    background-color: var(--dark);
+    /* background-color: var(--dark); */
     /* background: rgba(0, 0, 0, 0.2); */
+    background-color: var(--header);
 
     color: var(--basic);
     padding: 4px;
@@ -83,27 +84,6 @@ header {
     margin-left: 5px;
 }
 
-/* header media query style  */
-@media screen and (max-width: 730px) {
-    header {
-        /* padding: 8px; */
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width: 492px) {
-    header {
-        /* padding: 8px; */
-        font-size: 7px;
-    }
-}
-
-@media screen and (max-width: 372px) {
-    header {
-        /* padding: 8px; */
-        font-size: 6px;
-    }
-}
 
 /* header style end */
 
@@ -215,42 +195,6 @@ nav {
 }
 
 
-/* navbar media query  style */
-@media screen and (max-width: 992px) {
-
-    .navbar .nav-links {
-        display: none;
-    }
-
-    .navbar .toggle_btn {
-        display: block;
-    }
-
-    .dropdown_menu {
-        display: block;
-    }
-
-    .action-btn:hover {
-        scale: none;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .navbar {
-        padding: 20px;
-
-    }
-
-    .dropdown_menu {
-        left: 2rem;
-        width: unset;
-    }
-
-    .navbar .logo img {
-        height: 2.5rem;
-    }
-}
-
 
 
 
@@ -276,29 +220,13 @@ nav {
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 
-/* .animate-xd {
-    position: relative;
-    height: 50vh;
-    left: 450px;
-    bottom: 325px;
-    animation: rotate360 infinite 25s linear;
-}
-
-@keyframes rotate360 {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-} */
 .animate-xd {
     position: relative;
     height: 50vh;
     left: 450px;
     bottom: 325px;
     animation: enhancedRotate360 infinite 25s linear;
+
 }
 
 @keyframes enhancedRotate360 {
@@ -338,40 +266,6 @@ nav {
     }
 }
 
-
-@media screen and (max-width: 990px) {
-    .image-container {
-        background-position: 90%;
-    }
-
-    .animate-xd {
-
-        height: 35vh;
-
-        top: 35px;
-        left: 10px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .image-container {
-        background-position: 70%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .image-container {
-        background-position: right;
-    }
-
-    .animate-xd {
-
-        height: 25vh;
-
-        top: 35px;
-        left: 10px;
-    }
-}
 
 
 /* about us style   */
@@ -456,7 +350,7 @@ nav {
 } */
 
 .dream-job .company-list div img {
-    height: 3.5rem;
+    height: 5rem;
 }
 
 
@@ -512,6 +406,7 @@ footer .footer-col2 h3,
 footer .footer-col3 h3,
 footer .footer-col4 h3 {
     font-size: 18px;
+    font-weight: 700;
 }
 
 footer .footer-col2 ul li,
@@ -540,6 +435,105 @@ footer .footer-col4 ul li i {
 
 
 /* responsive style for mobile view */
+
+
+
+
+/* header media query style  */
+@media only screen and (max-width: 730px) {
+    header {
+        /* padding: 8px; */
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 492px) {
+    header {
+        /* padding: 8px; */
+        font-size: 7px;
+    }
+}
+
+@media only screen and (max-width: 372px) {
+    header {
+        /* padding: 8px; */
+        font-size: 6px;
+    }
+}
+
+/* navbar  */
+
+/* navbar media query  style */
+@media screen and (max-width: 992px) {
+
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .action-btn:hover {
+        scale: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar {
+        padding: 20px;
+
+    }
+
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .navbar .logo img {
+        height: 2.5rem;
+    }
+}
+
+
+/* image with container  */
+@media only screen and (max-width: 990px) {
+    .image-container {
+        background-position: 90%;
+    }
+
+    .animate-xd {
+
+        height: 35vh;
+
+        top: 35px;
+        left: 10px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .image-container {
+        background-position: 70%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .image-container {
+        background-position: right;
+    }
+
+    .animate-xd {
+
+        height: 25vh;
+
+        top: 35px;
+        left: 10px;
+    }
+}
 
 @media only screen and (max-width: 428px) {
 
@@ -606,7 +600,11 @@ footer .footer-col4 ul li i {
 
     }
 
-    footer .footer-col1,
+    footer .footer-col1 {
+        height: 10rem;
+        width: 90vw;
+    }
+
     footer .footer-col2,
     footer .footer-col3,
     footer .footer-col4 {
