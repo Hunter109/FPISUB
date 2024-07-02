@@ -83,6 +83,39 @@
     /* overflow-y: hidden; */
 }
 
+.learnmore {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px 55px;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+.learnmore-text {
+    width: 50%;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.learnmore img {
+    height: 15rem;
+}
+
+button {
+    margin: 20px 15px;
+    text-align: center;
+    background-color: #15803d;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 15px 60px;
+    cursor: pointer;
+}
+
 
 
 
@@ -146,7 +179,22 @@
     .final-msg p {
         font-weight: 400;
     }
+
+    .learnmore {
+        padding: 30px 25px;
+        flex-wrap: wrap;
+    }
+
+    .learnmore-text {
+        width: auto;
+
+    }
+
+    .learnmore img {
+        height: 10rem;
+    }
 }
+
 
 @media only screen and (min-width:430px) and (max-width: 840px) {
     .about-fpisub {
