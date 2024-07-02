@@ -357,7 +357,8 @@ nav {
 /* footer  */
 
 footer {
-    padding: 5rem;
+    padding: 4rem;
+
 
 }
 
@@ -419,6 +420,13 @@ footer .footer-col2 ul li i {
     padding-right: 10px;
     color: #6674cc;
     font-size: 20px;
+}
+
+footer .footer-col2 ul li:hover,
+footer .footer-col3 ul li:hover,
+footer .footer-col4 ul li:hover {
+    padding-left: 10px;
+    transition: all 500ms ease-in-out 2ms;
 }
 
 footer .footer-col3 ul li i {
